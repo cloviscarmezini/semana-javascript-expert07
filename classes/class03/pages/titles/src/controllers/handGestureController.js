@@ -1,6 +1,7 @@
 import { prepareRunChecker } from '../../../../lib/shared/util.js'
 
 const { shouldRun: scrollShouldRun } = prepareRunChecker({ timerDelay: 200 })
+const { shouldRun: clickShouldRub } = prepareRunChecker({ timerDelay: 300 })
 
 export default class HandGestureController {
   #view
@@ -49,6 +50,11 @@ export default class HandGestureController {
         if(event.includes('scroll')) {
           if(!scrollShouldRun()) continue
           this.#scrollPage(event)
+        }
+        if(event === 'click') {
+          if(!clickShouldRub()) continue;
+          this.#view.clickOnElement(x, y);
+          continue;
         }
       }
     } catch(error) {
