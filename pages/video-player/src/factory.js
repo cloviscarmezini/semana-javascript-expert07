@@ -45,14 +45,19 @@ async function getWorker() {
   return workerMock
 }
 
-const worker = await getWorker()
+const [rootPath] = window.location.href.split('/pages/');
 
-const camera = await Camera.init()
-const [rootPath] = window.location.href.split('/pages/')
+const worker = await getWorker();
+
+const view = new View();
+view.setVideoSrc(`${rootPath}/assets/video.mp4`)
+
+const camera = await Camera.init();
+
 const factory = {
   async initalize() {
     return Controller.initialize({
-      view: new View(),
+      view,
       worker,
       camera
     })
