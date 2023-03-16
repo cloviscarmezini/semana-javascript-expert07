@@ -5,14 +5,14 @@ Seja bem vindo(a) à sétima Semana Javascript Expert. Este é o código inicial
 Marque esse projeto com uma estrela 🌟
 
 ## Preview
-<img width=100% src="./classes/class04/assets/demo-template-lg.gif">
+<img width=100% src="./assets/demo-template-lg.gif">
 
 ## Pre-reqs
 - Este projeto foi criado usando Node.js v19.6
 - O ideal é que você use o projeto em ambiente Unix (Linux). Se você estiver no Windows, é recomendado que use o [Windows Subsystem Linux](https://www.omgubuntu.co.uk/how-to-install-wsl2-on-windows-10) pois nas aulas são mostrados comandos Linux que possam não existir no Windows.
 
-## Importante
-- Todo dia às 18hrs estou subindo o código das aulas do dia corrente em [classes](./classes). Se você for iniciar o projeto, remova a pasta [classes](./classes) para iniciar do zero!
+## Live demo
+- Para testar o projeto [clique aqui](https://cloviscarmezini.github.io/semana-javascript-expert07/pages/titles/)
 
 ## Running
 - Execute `npm ci` na pasta que contém o arquivo `package.json` para restaurar os pacotes
