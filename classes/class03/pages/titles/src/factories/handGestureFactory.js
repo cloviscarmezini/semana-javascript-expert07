@@ -13,9 +13,9 @@ import { fingerLookupIndexes, knownGestures, gestureStrings } from "../util/util
 import Camera from "../../../../lib/shared/camera.js"
 
 const camera = await Camera.init();
-const [rootPath] = window.location.href.split('/pages/');
+
 const factory = {
-  async initalize() {
+  async initialize() {
     return HandGestureController.initialize({
         camera,
         view: new HandGestureView({
